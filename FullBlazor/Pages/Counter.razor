@@ -1,0 +1,50 @@
+﻿@page "/counter"
+
+@inject IJSRuntime JsRuntime;
+@inject Blazored.LocalStorage.ISyncLocalStorageService localStorage
+@inject Data.TheFactoryDb theFactoryDb
+
+
+
+<h1>Counter</h1>
+
+<p>Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    private int currentCount = 0;
+
+    public class Person
+    {
+        public long? Id { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+
+    }
+
+    private async void IncrementCount()
+    {
+        await theFactoryDb.Open();
+
+        var people = await theFactoryDb.Employees.GetAll<Person>();
+
+
+        var newPerson = new Person()
+        {
+            FirstName = "John",
+            LastName = "Doe"
+        };
+
+        await theFactoryDb.Employees.Add(newPerson);
+
+
+        var ConnectionStatus = localStorage.GetItem<string>("ConnectionStatus");
+
+        Connection oCon = new Connection();
+
+
+        if (Convert.ToBoolean(ConnectionStatus))
+            currentCount++;
+    }
+}

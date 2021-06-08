@@ -1,0 +1,108 @@
+﻿@page "/"
+@using System.Reflection
+@using FullBlazor.Class
+@inject IJSRuntime JSRuntime
+@inject HttpClient Http
+
+
+<h1> Carga Dinamica de Componentes en Funcion de Json de Parametros </h1>
+
+<h1>---------------------------------------------------</h1>
+<p></p>
+
+@foreach ((Type type, Dictionary<string, object>? Params) comp in _ComponentList)
+{
+    @renderComponents(comp.type, comp.Params)
+    <h1>---------------------------------------------------</h1>
+    <p></p>
+}
+
+
+@if (Installable)
+{
+    <div class="row justify-content-center">
+        <div class="install-prompt col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
+            <span>Install app?</span>
+            <button class="installButton btn btn-primary" @onclick="@(() => InstallClicked())">Yes</button>
+            <button class="cancelButton btn btn-danger" @onclick="@(() => Installable = false)">No</button>
+        </div>
+    </div>}
+
+
+@code {
+
+    static bool Installable = true;
+    static Action OnInstallable;
+    EnableComponets[] EC;
+    Type[] AllTypes => Assembly.GetExecutingAssembly().GetTypes().Where(type => type.BaseType == typeof(ComponentBase)).ToArray();
+    public List<(Type, Dictionary<string, object>?)> _ComponentList = new List<(Type, Dictionary<string, object>?)>();
+
+
+
+
+    private RenderFragment renderComponents(Type componentType, Dictionary<string, object>? componentParams) => builder =>
+    {
+        builder.OpenComponent(0, componentType);
+        if (componentParams != null)
+        {
+            foreach (var pair in componentParams)
+            {
+                builder.AddAttribute(1, pair.Key, pair.Value);
+            }
+        }
+        builder.CloseComponent();
+    };
+
+    protected override async Task OnInitializedAsync()
+    {
+        EC = await Http.GetFromJsonAsync<EnableComponets[]>("sample-data/EnableComponent.json");
+
+        FillComnponents();
+    }
+
+    protected override void OnInitialized()
+    {
+
+        OnInstallable = () => InvokeAsync(StateHasChanged);
+    }
+
+    public async void FillComnponents()
+    {
+
+        foreach (var oTemp in EC)
+        {
+            selecteType = AllTypes.Where(type => type.Name.ToUpper() == oTemp.Name.ToUpper())
+                .FirstOrDefault() ?? typeof(SurveyPrompt);
+
+            _ComponentList.Add((selecteType, null));
+        }
+    }
+
+    [JSInvokable]
+    public async Task InstallClicked()
+    {
+        await JSRuntime.InvokeVoidAsync("BlazorPWA.installPWA");
+    }
+
+    Type[] types => Assembly.GetExecutingAssembly().GetTypes().Where(type => type.BaseType == typeof(ComponentBase)).ToArray();
+    Type selecteType;
+    RenderFragment RenderFragment;
+    private string _componentName;
+    public string componentName
+    {
+        get { return _componentName; }
+        set
+        {
+            _componentName = value;
+            selecteType = types.Where(type => type.Name.ToUpper() == value.ToUpper())
+            //selecteType = types.Where(type => type.Name.ToUpper() == value.ToUpper())
+            .FirstOrDefault() ?? typeof(SurveyPrompt);
+            RenderFragment = (builder) =>
+            {
+                builder.OpenComponent(0, selecteType);
+                builder.CloseComponent();
+            };
+        }
+    }
+
+}

@@ -1,0 +1,5 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\bin\Debug\net5.0\wwwroot\" />
+  <ContentRoot BasePath="/" Path="C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Debug\net5.0\scopedcss\bundle\" />
+  <ContentRoot BasePath="_content/BlazorIndexedDbJs" Path="C:\Users\Sebastian Sandoval\.nuget\packages\blazorindexeddbjs\2.3.15\build\..\staticwebassets\" />
+</StaticWebAssets>
