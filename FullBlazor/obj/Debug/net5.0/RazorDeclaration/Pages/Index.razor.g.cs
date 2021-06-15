@@ -105,7 +105,7 @@ using FullBlazor.Class;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 32 "C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\Pages\Index.razor"
+#line 31 "C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\Pages\Index.razor"
        
 
     static bool Installable = true;

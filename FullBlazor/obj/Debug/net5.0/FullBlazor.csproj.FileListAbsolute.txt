@@ -1089,13 +1089,8 @@ C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Deb
 C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Debug\net5.0\build-gz\y4LBvW7r.gz
 C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Debug\net5.0\build-gz\7YEH+bCq.gz
 C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Debug\net5.0\build-gz\zDFrQvg1.gz
-C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Debug\net5.0\build-gz\3cTbAEJo.gz
-C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Debug\net5.0\build-gz\T6YADG2F.gz
 C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Debug\net5.0\build-gz\qVZJWas9.gz
-C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Debug\net5.0\build-gz\HXlfd5tk.gz
-C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Debug\net5.0\build-gz\Vhe7PFfs.gz
 C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Debug\net5.0\build-gz\seyN6NJh.gz
-C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Debug\net5.0\build-gz\AygvYtPy.gz
 C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Debug\net5.0\build-gz\5O6LhJjo.gz
 C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Debug\net5.0\build-gz\3Z4ub29m.gz
 C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Debug\net5.0\build-gz\JJZWaBd+.gz
@@ -1110,7 +1105,6 @@ C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Deb
 C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Debug\net5.0\build-gz\HYai5spy.gz
 C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Debug\net5.0\build-gz\n6LSKB2M.gz
 C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Debug\net5.0\build-gz\10T67L3W.gz
-C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Debug\net5.0\build-gz\O4pVg+Gy.gz
 C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Debug\net5.0\build-gz\l0kKvuGr.gz
 C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Debug\net5.0\build-gz\PaGDNdt6.gz
 C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Debug\net5.0\build-gz\tezzz0+O.gz
@@ -1298,3 +1292,10 @@ C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Deb
 C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Debug\net5.0\FullBlazor.pdb
 C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Debug\net5.0\serviceworkers\wwwroot\service-worker.js
 C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Debug\net5.0\service-worker-assets.js
+C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Debug\net5.0\FullBlazor.csprojAssemblyReference.cache
+C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Debug\net5.0\build-gz\1Ma6K+UO.gz
+C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Debug\net5.0\build-gz\ZG3IX9u5.gz
+C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Debug\net5.0\build-gz\+kF3OOVi.gz
+C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Debug\net5.0\build-gz\H93QxkMC.gz
+C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Debug\net5.0\build-gz\rDU74Rhc.gz
+C:\Users\Sebastian Sandoval\Documents\GitHub\DinamicRendering\FullBlazor\obj\Debug\net5.0\build-gz\2v8PQxzp.gz
